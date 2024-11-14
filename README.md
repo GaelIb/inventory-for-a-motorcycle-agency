@@ -12,3 +12,5 @@ Process optimization: Improve accury when new inventory is recorded, minimizing 
 
 # Project design 
 Since it is base in object oriented coputational thinking, the design will represent each entity as an independent class, such as motorcycles, spare parts, inventory and revenue.
+
+![imagen](https://github.com/user-attachments/assets/76b703e0-e368-44c1-b366-ba2731220513)
