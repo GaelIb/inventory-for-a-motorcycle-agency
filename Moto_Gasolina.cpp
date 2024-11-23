@@ -1,35 +1,31 @@
-#include "Moto_Gasolina.h"
+#include "MotoGasolina.h"
 
+// Constructor with initializer list
+MotoGasolina::MotoGasolina(string _marca, string _modelo, int _year, float _price, int _quantity, int _capacidadGasolina, float _kmPerL)
+    : Moto(_marca, _modelo, _year, _price, _quantity), capacidadGasolina(_capacidadGasolina), kmPerL(_kmPerL) {}
 
-Moto_Gasolina::Moto_Gasolina(string _marca, string _modelo, int _year, float _price, int _quantity, int _capacidad_gasolina, float _km_L){
-	marca=_marca;
-	modelo=_modelo;
-	year=_year;
-	price=_price;
-	quantity=_quantity;
-	capacidadGasolina=_capacidad_gasolina;
-	kmL=_kmL
-		
-	
+// Setter for capacidadGasolina
+void MotoGasolina::setCapacidadGasolina(int _capacidadGasolina) {
+    capacidadGasolina = _capacidadGasolina;
 }
 
-void Moto_Gasolina::setcapacidadGasolina(int _capacidad_gasolina) {
-    capacidadGasolina = _capacidad_gasolina;
+// Setter for kmPerL
+void MotoGasolina::setKmPerL(float _kmPerL) {
+    kmPerL = _kmPerL;
 }
 
-void Moto_Gasolina::setkm_L(int _kmL) {
-    kmL = _kmL;
+// Getter for capacidadGasolina
+int MotoGasolina::getCapacidadGasolina() const {
+    return capacidadGasolina;
 }
 
-int Moto_Gasolina::getcapacidadGasolina() const {
-    return autonomia;
+// Getter for kmPerL
+float MotoGasolina::getKmPerL() const {
+    return kmPerL;
 }
 
-float Moto_gasolina::getkmL() const {
-    return kmL;
-
-string Moto_Gasolina::getMoto_Gasolina  Data(){
-    string Moto_GasolinaData = "Marca: "+ marca + "\nModelo: " + modelo  + 
-    "\nPrice: " + to_string(price) + "\nQuantity: " + to_string(quantity) + "\nYear: " + to_string(year) + "\nCapacidad_Gasolina: " + to_string(capacidadGasolina) + "\nKm_L:" + km_L;
-    return Moto_GasolinaData;
+// Display data for MotoGasolina
+string MotoGasolina::getMotoGasolinaData() const {
+    return getMotoData() + ", Tank Capacity: " + to_string(capacidadGasolina) + 
+           " L, Fuel Efficiency: " + to_string(kmPerL) + " km/L";
 }
