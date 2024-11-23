@@ -1,20 +1,27 @@
+#ifndef MOTOGASOLINA_H
+#define MOTOGASOLINA_H
+
 #include "Moto.h"
 
-#ifndef MOTO_GASOLINA_H
-#define MOTO_GASOLINA_H
+class MotoGasolina : public Moto {
+private:
+    int capacidadGasolina; // Tank capacity
+    float kmPerL;          // Fuel efficiency
 
-class Moto_gasolina : public Moto {
-    private:
-        int CapacidadGasolina;  
-        float km_L;              
-    public:
-        Moto_gasolina(string , string , int , float , int , int , float );
+public:
+    // Constructor
+    MotoGasolina(string marca, string modelo, int year, float price, int quantity, int capacidadGasolina, float kmPerL);
 
-        int getCapacidadGasolina() ;
-        float getKm_L() ;
+    // Setters
+    void setCapacidadGasolina(int capacidad);
+    void setKmPerL(float km);
 
-        
-        string getMotoData();
+    // Getters
+    int getCapacidadGasolina() const;
+    float getKmPerL() const;
+
+    // Display MotoGasolina data
+    string getMotoGasolinaData() const;
 };
 
 #endif
