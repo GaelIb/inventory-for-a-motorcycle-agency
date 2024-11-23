@@ -35,28 +35,6 @@ Log purchases made by customers, including the motorcycles purchased.
 Calculate the total purchase amount dynamically based on selected motorcycles.
 Display detailed purchase information, including customer details and the motorcycles purchased.
 
-# Project design 
-MotorcycleInventory/
-│
-│
-├── Moto.h             # Base class Moto
-├── Moto.cpp           # Moto implementation
-│
-├── MotoElectrica.h    # Electric motorcycle class definition
-├── MotoElectrica.cpp  # Electric motorcycle class implementation
-│
-├── MotoGasolina.h     # Gasoline motorcycle class definition
-├── MotoGasolina.cpp   # Gasoline motorcycle class implementation
-│
-├── Inventario.h       # Inventory class definition
-├── Inventario.cpp     # Inventory class implementation
-│
-├── Compra.h           # Purchase class definition
-├── Compra.cpp         # Purchase class implementation
-│
-├── main.cpp           # Main program to execute the project
-│
-└── README.md          # Project documentation
 
 ![imagen](https://github.com/user-attachments/assets/6622e7b2-ea7f-4a4f-b20a-ff47014e0cdc)
 
