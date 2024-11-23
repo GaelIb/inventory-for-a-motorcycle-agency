@@ -38,3 +38,4 @@ Display detailed purchase information, including customer details and the motorc
 
 ![imagen](https://github.com/user-attachments/assets/6622e7b2-ea7f-4a4f-b20a-ff47014e0cdc)
 
+g++ MAIN.cpp Inventario.cpp Tienda.cpp Moto.cpp MotoGasolina.cpp MotoElectrica.cpp
