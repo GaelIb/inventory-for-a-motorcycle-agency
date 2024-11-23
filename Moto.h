@@ -7,19 +7,20 @@ using namespace std;
 class Moto
 {
     protected:
-        string Marca;
-        string Modelo;
-        int Año;
-        float Price;
-        int Quantity;
+        string marca;
+        string modelo;
+        int year;
+        float price;
+        int quantity;
     public:
         Moto(string,string,int,float,int);
         void setPrice(float);
         void setQuantity(int);
         string getMarca();
         string getModelo();
-        int getAño();
+        int getYear();
         float getPrice();
         int getQuantity();
+        string getMotoData();
 };
 #endif
