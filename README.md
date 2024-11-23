@@ -58,5 +58,5 @@ MotorcycleInventory/
 │
 └── README.md          # Project documentation
 
+![imagen](https://github.com/user-attachments/assets/6622e7b2-ea7f-4a4f-b20a-ff47014e0cdc)
 
-![imagen](https://github.com/user-attachments/assets/76b703e0-e368-44c1-b366-ba2731220513)
